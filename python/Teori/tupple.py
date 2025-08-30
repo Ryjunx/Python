@@ -14,5 +14,6 @@ for i in range(0, len(tupple)):
 
 n = "solotre"
 if n in tupple_1:
-    print("benar", n, "ada di tupple")
-    exit()
+    print(n, "ada di tupple")
+else:
+    print("tidak ada", n, "di tupple")

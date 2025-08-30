@@ -1,0 +1,96 @@
+x = [80, 90, 70, 86, 93, 87, 90, 70, 71, 65]   # data nilai pelajaran eksak
+y = [80, 76, 78, 80, 90, 20, 90, 100, 80, 87]  # data nilai pelajaran  non eksak
+
+total_x = 0   #jumlah kesuluruan data x
+count_x = 0   #derajat pada data x
+
+for angka in x:        #menghitung secara berulang dari data awal hingga akhir
+    total_x += angka   #menjumlahkannya
+    count_x += 1       #menghitung derajat yang ada
+
+total_y = 0     #jumlah kesuluruhan data y
+count_y = 0     #derajat pada data y
+
+for angka in y:        #menghitung secara berulang dari data awal hingga akhir
+    total_y += angka   #menjumlahkannya
+    count_y += 1       #menghitung derajat yang ada
+
+for i in x:       #indentification
+        print("x :", i)
+
+print("___________________________________________________________________________")    #pembatas
+
+for l in y:       #indentification
+     print("y :", l)
+
+print("___________________________________________________________________________")    #pembatas
+
+for angka_x, angka_y in zip(x, y):    #menghitung sigma data x lalu dikali dengan data y
+    xy = angka_x * angka_y
+    print("xy :", xy)
+
+mean_y = total_y / count_y     #membagikan
+mean_x = total_x / count_x     #membagikan
+
+
+print("count x:", count_x)
+print("total x:", total_x)
+print("Mean y:", mean_y)
+print("Mean x:", mean_x)
+print("count y:", count_y)
+print("total y:", total_y)
+
+yx = [6400, 6840, 5460, 6880, 8370, 1740, 8100, 7000, 5680, 5655]
+
+total_yx = 0     #jumlah kesuluruhan data y
+
+for angka in yx:        #menghitung secara berulang dari data awal hingga akhir
+    total_yx+= angka   #menjumlahkannya
+
+print("total sigma yx:", total_yx)
+
+
+# b = (nΣ(xy) - ΣxΣy) / (nΣ(x²) - (Σx)²), a = (Σy - bΣx) / n. 
+
+
+print("___________________________________________________________________________")  
+
+for angka_x, angka_y in zip(x, y):    #menghitung sigma data x lalu dikali dengan data y
+    xx = angka_x * angka_x
+    print("xx :", xx) 
+
+x_2 = [6400, 8100, 4900, 7396, 8649, 7569, 8100, 4900, 5041, 4225]
+
+total_x_2 = 0     #jumlah kesuluruhan data y
+
+for angka in x_2:        #menghitung secara berulang dari data awal hingga akhir
+    total_x_2+= angka   #menjumlahkannya
+
+print("total sigma xx:", total_x_2)
+
+print("___________________________________________________________________________")  
+
+
+for angka_x, angka_y in zip(x, y):    #menghitung sigma data x lalu dikali dengan data y
+    yy = angka_y * angka_y
+    print("yy :", yy)
+
+y_2 = [6400, 5776, 6084, 6400, 8100, 400, 8100, 10000, 6400, 7569]
+
+
+total_y_2 = 0     #jumlah kesuluruhan data y
+
+for angka in y_2:        #menghitung secara berulang dari data awal hingga akhir
+    total_y_2+= angka   #menjumlahkannya
+
+print("total sigma yy:", total_y_2)
+
+
+
+
+
+
+
+
+    
+
